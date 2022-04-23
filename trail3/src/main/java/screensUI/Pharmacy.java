@@ -36,11 +36,9 @@ public class Pharmacy extends javax.swing.JPanel {
         cmbmedicinename = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
         lblprescriptionimage = new javax.swing.JLabel();
-        lblviewofprescription = new javax.swing.JLabel();
         lblprescription = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtprescriptionview = new javax.swing.JTextArea();
-        lblviewofprescription1 = new javax.swing.JLabel();
         lblquantity = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
         lblamount = new javax.swing.JLabel();
@@ -49,6 +47,9 @@ public class Pharmacy extends javax.swing.JPanel {
         scrlpnlpharmatable = new javax.swing.JScrollPane();
         tblmedicineview = new javax.swing.JTable();
         lblmoneypicture = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
 
         setBackground(new java.awt.Color(204, 204, 255));
 
@@ -98,10 +99,6 @@ public class Pharmacy extends javax.swing.JPanel {
 
         lblprescriptionimage.setIcon(new javax.swing.ImageIcon("C:\\Users\\Sreyoshi\\Documents\\AED_Assignments\\AED-finalProject\\Image\\prescription 1.jpg")); // NOI18N
 
-        lblviewofprescription.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblviewofprescription.setForeground(new java.awt.Color(0, 0, 204));
-        lblviewofprescription.setText("Details of Prescription:-");
-
         lblprescription.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         lblprescription.setForeground(new java.awt.Color(0, 0, 204));
         lblprescription.setText("Prescription-");
@@ -109,10 +106,6 @@ public class Pharmacy extends javax.swing.JPanel {
         txtprescriptionview.setColumns(20);
         txtprescriptionview.setRows(5);
         jScrollPane1.setViewportView(txtprescriptionview);
-
-        lblviewofprescription1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        lblviewofprescription1.setForeground(new java.awt.Color(0, 0, 204));
-        lblviewofprescription1.setText("Choose the Medicine:-");
 
         lblquantity.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         lblquantity.setForeground(new java.awt.Color(0, 0, 204));
@@ -147,6 +140,24 @@ public class Pharmacy extends javax.swing.JPanel {
 
         lblmoneypicture.setIcon(new javax.swing.ImageIcon("C:\\Users\\Sreyoshi\\Documents\\AED_Assignments\\AED-finalProject\\Image\\money.jpg")); // NOI18N
 
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        jButton1.setText("Next to add in Inventory>>");
+
+        jTextField1.setBackground(new java.awt.Color(0, 0, 204));
+        jTextField1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField1.setText("Details Of Prescription:-");
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+
+        jTextField2.setBackground(new java.awt.Color(0, 0, 204));
+        jTextField2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jTextField2.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField2.setText("Choose the Medicine:-");
+
         javax.swing.GroupLayout lblpurplecolorLayout = new javax.swing.GroupLayout(lblpurplecolor);
         lblpurplecolor.setLayout(lblpurplecolorLayout);
         lblpurplecolorLayout.setHorizontalGroup(
@@ -154,72 +165,79 @@ public class Pharmacy extends javax.swing.JPanel {
             .addGroup(lblpurplecolorLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(lblpurplecolorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lblpurplecolorLayout.createSequentialGroup()
-                        .addGroup(lblpurplecolorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(lblpurplecolorLayout.createSequentialGroup()
-                                .addGroup(lblpurplecolorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(lblpname, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(lblprescription, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGroup(lblpurplecolorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(lblpurplecolorLayout.createSequentialGroup()
-                                        .addGap(18, 18, 18)
-                                        .addComponent(txtpname, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(lblpurplecolorLayout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lblprescriptionimage, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(33, 33, 33))
-                    .addGroup(lblpurplecolorLayout.createSequentialGroup()
-                        .addComponent(lblviewofprescription)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(lblpurplecolorLayout.createSequentialGroup()
-                        .addGroup(lblpurplecolorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblviewofprescription1)
-                            .addGroup(lblpurplecolorLayout.createSequentialGroup()
-                                .addComponent(lblmedicinename)
-                                .addGap(29, 29, 29)
-                                .addGroup(lblpurplecolorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(cmbmedicinename, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                            .addComponent(lblquantity)
-                            .addGroup(lblpurplecolorLayout.createSequentialGroup()
-                                .addGap(190, 190, 190)
-                                .addComponent(btnpharmacyadd))
-                            .addComponent(scrlpnlpharmatable, javax.swing.GroupLayout.PREFERRED_SIZE, 444, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblmoneypicture, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(65, 65, 65))
                     .addGroup(lblpurplecolorLayout.createSequentialGroup()
                         .addComponent(lblamount)
                         .addGap(64, 64, 64)
                         .addComponent(txtamount, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lblpurplecolorLayout.createSequentialGroup()
+                        .addGroup(lblpurplecolorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(lblpurplecolorLayout.createSequentialGroup()
+                                .addGroup(lblpurplecolorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(lblpurplecolorLayout.createSequentialGroup()
+                                        .addComponent(lblmedicinename)
+                                        .addGap(29, 29, 29)
+                                        .addGroup(lblpurplecolorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(cmbmedicinename, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                    .addComponent(lblquantity)
+                                    .addGroup(lblpurplecolorLayout.createSequentialGroup()
+                                        .addGap(190, 190, 190)
+                                        .addComponent(btnpharmacyadd))
+                                    .addComponent(scrlpnlpharmatable, javax.swing.GroupLayout.PREFERRED_SIZE, 444, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 477, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(lblpurplecolorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lblpurplecolorLayout.createSequentialGroup()
+                                        .addComponent(lblmoneypicture, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(32, 32, 32))
+                                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING)))
+                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(lblpurplecolorLayout.createSequentialGroup()
+                                .addGroup(lblpurplecolorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(lblpurplecolorLayout.createSequentialGroup()
+                                        .addGroup(lblpurplecolorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(lblpname, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(lblprescription, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addGroup(lblpurplecolorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(lblpurplecolorLayout.createSequentialGroup()
+                                                .addGap(18, 18, 18)
+                                                .addComponent(txtpname, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(lblpurplecolorLayout.createSequentialGroup()
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGap(0, 0, Short.MAX_VALUE))
+                                    .addComponent(jTextField1))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblprescriptionimage, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(33, 33, 33))))
         );
         lblpurplecolorLayout.setVerticalGroup(
             lblpurplecolorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(lblpurplecolorLayout.createSequentialGroup()
-                .addGap(13, 13, 13)
-                .addComponent(lblviewofprescription)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(lblpurplecolorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblpname)
-                    .addGroup(lblpurplecolorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(lblpurplecolorLayout.createSequentialGroup()
-                            .addComponent(txtpname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(25, 25, 25)
-                            .addGroup(lblpurplecolorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(lblprescription)
-                                .addComponent(jScrollPane1)))
+                    .addGroup(lblpurplecolorLayout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(lblpurplecolorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblpname)
+                            .addGroup(lblpurplecolorLayout.createSequentialGroup()
+                                .addComponent(txtpname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(25, 25, 25)
+                                .addGroup(lblpurplecolorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblprescription)
+                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(lblpurplecolorLayout.createSequentialGroup()
+                        .addGap(29, 29, 29)
                         .addComponent(lblprescriptionimage)))
                 .addGap(21, 21, 21)
                 .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(lblpurplecolorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(lblpurplecolorLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblviewofprescription1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
                         .addGroup(lblpurplecolorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblmedicinename)
                             .addComponent(cmbmedicinename, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -237,9 +255,10 @@ public class Pharmacy extends javax.swing.JPanel {
                             .addComponent(txtamount, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lblpurplecolorLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(lblmoneypicture)
-                        .addGap(340, 340, 340))))
+                        .addGap(33, 33, 33)
+                        .addComponent(jButton1)
+                        .addGap(278, 278, 278))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -250,7 +269,7 @@ public class Pharmacy extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblpurplecolor, javax.swing.GroupLayout.PREFERRED_SIZE, 779, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 34, Short.MAX_VALUE))
+                .addGap(0, 24, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -258,7 +277,7 @@ public class Pharmacy extends javax.swing.JPanel {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblpurplecolor, javax.swing.GroupLayout.PREFERRED_SIZE, 654, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 42, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -266,14 +285,21 @@ public class Pharmacy extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtamountActionPerformed
 
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnpharmacyadd;
     private javax.swing.JComboBox<String> cmbmedicinename;
+    private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     private javax.swing.JLabel lblamount;
     private javax.swing.JLabel lblheading;
     private javax.swing.JLabel lblmedicinename;
@@ -284,8 +310,6 @@ public class Pharmacy extends javax.swing.JPanel {
     private javax.swing.JLabel lblprescriptionimage;
     private javax.swing.JPanel lblpurplecolor;
     private javax.swing.JLabel lblquantity;
-    private javax.swing.JLabel lblviewofprescription;
-    private javax.swing.JLabel lblviewofprescription1;
     private javax.swing.JScrollPane scrlpnlpharmatable;
     private javax.swing.JTable tblmedicineview;
     private javax.swing.JTextField txtamount;
